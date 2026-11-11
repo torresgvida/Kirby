@@ -1,0 +1,397 @@
+
+@font-face {
+    font-family: 'MoreSugar';
+    src: url(../fonts/MoreSugar-Regular.otf);
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/39/7e/9f/397e9f64b443b9d7483504cf336aea62.jpg);
+}
+
+ 
+.logo {
+    height: 80px;
+    position: fixed;
+    margin-top: 0px;
+    z-index: 6;
+    margin-left: 10px;
+}
+
+.navbar {
+    width: 900px;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    z-index: 5;
+
+    border-radius: 0px 0px 20px 20px;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+}
+ 
+a {
+    padding-left: 100px;
+    color: #f0628e;
+    font-size: 20px;
+    font-family: "MoreSugar";
+    text-decoration: none;
+}
+
+
+
+.Cuerpo {
+    width: 900px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Kirby { 
+    width: 900px;
+    height: 500px;
+    background: image-set(url(../img/FondoAmarillo.png));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.KirbyTXT {
+    width: 900px;
+    background-color: white;
+    color: black;
+    margin-top: 100px;
+    font-family: 'Poppins';
+    padding: 60px 50px 100px 450px;
+    z-index: 1;
+    position: absolute;
+
+    border-radius: 50px 50px 10px 10px;
+    -webkit-border-radius: 50px 50px 10px 10px;
+    -moz-border-radius: 50px 50px 10px 10px;
+}
+
+.Kirby h2 {
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    margin: 400px 150px 0 50px;
+    color: #f0628e;
+    font-family: 'MoreSugar';
+    font-size: 50px;
+
+    text-shadow:
+        -2px -2px 0 #ffffff,
+         2px -2px 0 #ffffff,
+        -2px  2px 0 #ffffff,
+         2px  2px 0 #ffffff;
+}
+
+.Kirby img {
+    width: 250px;
+    margin-top: 150px;
+    margin-left: 100px;
+    z-index: 2;
+    position: absolute;
+
+    animation: wiggle 1s ease-in-out infinite; 
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.Kirby h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: #743f1b;
+    font-family: 'MoreSugar';
+    font-size: 70px;
+    text-shadow:
+        -3px -3px 0 #ffffff,
+         3px -3px 0 #ffffff,
+        -3px  3px 0 #ffffff,
+         3px  3px 0 #ffffff;
+
+    animation: scale-in 0.5s ease-in-out 0s both;
+}
+
+@keyframes scale-in {
+    from { transform: scale(0,0);}
+    25% {transform: sacle(1.15, 1.3);}
+    50% {transform: sacle(0.9, 0.8);}
+    75% {transform: scale(1.1,1.05);}
+    to {transform: scale(1,1);}
+}
+
+
+
+    /*HABILIDADES*/
+
+.habilidades { 
+    width: 900px;
+    height: 700px;
+    background: image-set(url(../img/FondoAmarillo.png));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.habilidades h1 {
+    text-align: center;
+    padding-top: 200px;
+    color: #743f1b;
+    font-family: 'MoreSugar';
+    font-size: 70px;
+    text-shadow:
+        -3px -3px 0 #ffffff,
+         3px -3px 0 #ffffff,
+        -3px  3px 0 #ffffff,
+         3px  3px 0 #ffffff;
+
+    animation: scale-in 0.5s ease-in-out 0s both;
+
+}
+
+.muestra {
+    margin-top: 100px;
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    font-family: 'Poppins';
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    border-radius: 50px 50px 10px 10px;
+    -webkit-border-radius: 50px 50px 10px 10px;
+    -moz-border-radius: 50px 50px 10px 10px;
+}
+
+.muestra h3 {
+    color: #743f1b;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.inline-block {
+    padding: 50px 5px 5px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+
+    animation: clip-in 0.8s 
+        cubic-bezier(0.95, 0, 0.03, 1.01)
+        0s both;
+    }
+
+.skill {
+    width: 200px;
+
+    border-radius: 100px 100px 100px 100px;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+}
+
+.icon {
+    margin-top: -20px;
+    width: 100px;
+    z-index: 2;
+    position: absolute;
+
+    animation: wiggle 1s ease-in-out infinite; 
+}
+
+    /*PERSONALIZACIÓN*/
+
+.Personalizacion {
+    margin-top: 350px;
+    width: 900px;
+    height: 700px;
+    background: image-set(url(../img/FondoAmarillo.png));
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.Personalizacion h1 {
+    text-align: center;
+    padding-top: 200px;
+    color: #743f1b;
+    font-family: 'MoreSugar';
+    font-size: 70px;
+    text-shadow:
+        -3px -3px 0 #ffffff,
+         3px -3px 0 #ffffff,
+        -3px  3px 0 #ffffff,
+         3px  3px 0 #ffffff;
+
+    animation: scale-in 0.5s ease-in-out 0s both;
+
+}
+
+.carrusel {
+    width: 900px;
+    background-color: white;
+    color: black;
+    margin-top: 100px;
+    font-family: 'Poppins';
+    padding: 60px 0 100px 0px;
+    z-index: 1;
+    position: absolute;
+
+    border-radius: 50px 50px 10px 10px;
+    -webkit-border-radius: 50px 50px 10px 10px;
+    -moz-border-radius: 50px 50px 10px 10px;
+
+}
+
+.carrusel img {
+    width: 900px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$carousel-tokens: defaults(
+  (
+    --carousel-gap: .75rem,
+    --carousel-indicator-bg: var(--fg-3),
+    --carousel-indicator-width: .75rem,
+    --carousel-indicator-height: .75rem,
+    --carousel-indicator-spacer: .25rem,
+    --carousel-indicator-opacity-duration: .6s,
+    --carousel-indicator-opacity-timing: ease,
+    --carousel-indicator-width-duration: .3s,
+    --carousel-indicator-width-timing: ease,
+    --carousel-indicator-progress-bg: var(--carousel-indicator-bg),
+    --carousel-control-icon-width: 1rem,
+    --carousel-control-prev-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/></svg>"),
+    --carousel-control-next-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>"),
+    --carousel-control-pause-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5'/></svg>"),
+    --carousel-control-play-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z'/></svg>"),
+
+    --carousel-items: 1,
+    --carousel-items-gap: 0px,
+    --carousel-items-peek: 0px,
+    --carousel-fade-duration: .6s,
+    --carousel-fade-timing: ease,
+  ),
+  $carousel-tokens
+);
+
+
+    /*FOOTER*/
+
+.piepagina{
+    width: 900px;
+    height: 500px;
+    background-color: transparent;
+    position: relative;
+    
+}
+
+.piepagina img {
+    padding-top: 700px;
+    width: 900px;
+    background-color: white;
+}
+
+/* ===== RESPONSIVO PARA CELULARES (pegar al final del CSS) ===== */
+@media (max-width: 900px) {
+
+    body { overflow-x: hidden; }
+
+    .navbar,
+    .Cuerpo,
+    .Kirby,
+    .KirbyTXT,
+    .habilidades,
+    .muestra,
+    .Personalizacion,
+    .carrusel,
+    .carrusel img,
+    .piepagina,
+    .piepagina img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Navbar */
+    .logo { height: 50px; }
+    .navbar { padding: 15px 10px; }
+    a {
+        padding-left: 0;
+        margin: 0 8px;
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    /* Kirby (portada) */
+    .Kirby { background-size: cover; }
+    .Kirby h1 { font-size: 40px; padding-top: 60px; }
+    .Kirby h2 {
+        left: 0;
+        right: 0;
+        margin: 400px 20px 0;
+        font-size: 28px;
+    }
+    .Kirby img {
+        width: 200px;
+        left: 0;
+        right: 0;
+        margin: 150px auto 0;
+    }
+    .KirbyTXT { padding: 400px 20px 40px; }
+
+    /* Habilidades */
+    .habilidades {
+        height: auto;
+        min-height: 700px;
+        background-size: cover;
+    }
+    .habilidades h1 { font-size: 40px; padding-top: 120px; }
+    .muestra { height: auto; padding-bottom: 20px; }
+    .inline-block {
+        width: calc(50% - 20px);
+        height: auto;
+        min-height: 300px;
+        margin: 10px;
+    }
+    .skill { width: 100%; }
+
+    /* Personalización */
+    .Personalizacion {
+        height: auto;
+        min-height: 700px;
+        background-size: cover;
+    }
+    .Personalizacion h1 { font-size: 40px; padding-top: 120px; }
+    .carrusel { padding: 40px 0 60px; }
+
+    /* Footer */
+    .piepagina { height: auto; }
+    .piepagina img { padding-top: 350px; }
+}
